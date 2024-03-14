@@ -1,10 +1,12 @@
 # CRUD  Java
 
 ---
-title: Programação Orientada a Objetos
-subtitle: Desenvolvimento de um CRUD com Java, IntelliJ IDEA, Maven e PostgreSQL
-author: Seu Nome
-date: \today
+
+# Programação Orientada a Objetos
+
+## Desenvolvimento de um CRUD com Java, IntelliJ IDEA, Maven e PostgreSQL
+
+### author: rogerio-silva date: \today
 ---
 
 # Sumário
