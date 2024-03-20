@@ -90,12 +90,10 @@ sudo apt install pgadmin4
 # Configurando o *database Server* no pgAdmin
 
 - Abra o pgAdmin4
-- Clique com o botão direito do mouse em *Servers* e selecione *Create* > *Server...*
-
+- Clique com o botão direito do mouse em *Servers* e selecione *Create* > *Server...* ou clique em *Add New Server* na janela **Welcome** da aba *Dashboard*
 ![](img/pgAdmin#1.png)
 
 - Na guia *General*, insira um nome para o servidor
-
 ![pgAdmin#1.png](img%2FpgAdmin%231.png)
 
 - Na guia *Connection*, insira as informações do servidor PostgreSQL
