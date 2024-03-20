@@ -124,38 +124,30 @@ sudo apt install pgadmin4
 - Abra o pgAdmin4
 - Clique com o botão direito do mouse em *Servers* e selecione *Create* > *Server...* ou clique em *Add New Server* na
   janela **Welcome** da aba *Dashboard*
-
 ![pgAdmin#1.png](img%2FpgAdmin%231.png)
 
 - Na guia *General*, insira um nome para o servidor
-
 ![pgAdmin#2.png](img%2FpgAdmin%232.png)
 
 - Na guia *Connection*, insira as informações do servidor PostgreSQL. Insira o endereço do servidor em *Host
   name/address*, o número da porta em *Port* (mantenha a sugestão padrão: 5432), o nome do usuário em *Username* e a
   senha em *Password*. Clique em *Save*
-
 ![pgAdmin#3.png](img%2FpgAdmin%233.png)
 
 - Clique com o botão direito do mouse no servidor criado e selecione *Connect*.  Insira a senha do usuário do PostgreSQL, caso seja solicitada. Clique em *OK*
 - O servidor PostgreSQL estará conectado
-
 ![pgAdmin#4.png](img%2FpgAdmin%234.png)
 
 - Clique com o botão direito do mouse em *Databases* e selecione *Create* > *Database...*
-
 ![pgAdmin#7.png](img%2FpgAdmin%237.png)
 
 - Na guia *General*, insira um nome para o banco de dados. Clique em *Save*. O banco de dados estará criado.
-
 ![pgAdmin#8.png](img%2FpgAdmin%238.png)
 
 - Clique com o botão direito do mouse no banco de dados criado e selecione *Query Tool*
-
 ![pgAdmin#9.png](img%2FpgAdmin%239.png)
 
 - Insira o comando SQL para criar a tabela. Clique em *Execute/Refresh* (F5). A tabela estará criada
-
 ![pgAdmin#10.png](img%2FpgAdmin%2310.png)
 
 
