@@ -6,13 +6,14 @@
 
 ## Desenvolvimento de um CRUD com Java, IntelliJ IDEA, Maven e PostgreSQL
 
-### author: rogerio-silva date: \today
+### author: rogerio-silva date: 21/03/2024
 ---
 
 # Sumário
 
-1. [Configuração do ambiente de desenvolvimento](#configuração-do-ambiente-de-desenvolvimento)
-2. [Configuração do ambiente de desenvolvimento (continuação)](#configuração-do-ambiente-de-desenvolvimento-continuação)
+1. [Configuração do ambiente de desenvolvimento (PostgreSQL e pgAdmin4)](#configuração-do-ambiente-de-desenvolvimento)
+2. [Configurando o Database server no pgAdmin](#configurando-o-database-server-no-pgadmin)
+2. [Configuração do ambiente de desenvolvimento (continuação)](#configuração-do-ambiente-de-desenvolvimento-ide-e-maven)
 3. [Desenvolvimento do código](#desenvolvimento-do-código)
 4. [Testando o CRUD](#testando-o-crud)
 5. [Considerações finais](#considerações-finais)
@@ -128,7 +129,7 @@ sudo apt install pgadmin4
   ![pgAdmin#1.png](img%2FpgAdmin%231.png)
 
 
-- Na guia *General*, insira um nome para o servidor
+- Na guia *General*, insira um nome no campo *Name* para o servidor.
 
   ![pgAdmin#2.png](img%2FpgAdmin%232.png)
 
@@ -155,7 +156,7 @@ sudo apt install pgadmin4
 - Clique com o botão direito do mouse no banco de dados criado e selecione *Query Tool*
   ![pgAdmin#9.png](img%2FpgAdmin%239.png)
 
-- Insira o comando SQL para criar a tabela. Clique em *Execute/Refresh* (F5). A tabela estará criada
+- Insira o comando SQL. Clique em *Execute script* (F5) para executar o comando.
 
   ![pgAdmin#10.png](img%2FpgAdmin%2310.png)
 
