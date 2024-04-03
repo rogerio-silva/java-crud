@@ -164,6 +164,7 @@ sudo apt install pgadmin4
 
 - Configuração do ambiente no IntelliJ IDEA
 
+
 - Criação de um novo projeto Maven
 
 ---

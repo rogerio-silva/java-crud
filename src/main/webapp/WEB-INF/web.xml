@@ -4,21 +4,4 @@
     http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
     version="3.1">
 
-    <servlet>
-        <servlet-name>PrimeiraServlet</servlet-name>
-        <servlet-class>br.com.numbersapp.PrimeiraServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>PrimeiraServlet</servlet-name>
-        <url-pattern>/primeira</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>OutraServlet</servlet-name>
-        <servlet-class>br.com.numbersapp.OutraServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>OutraServlet</servlet-name>
-        <url-pattern>/outra</url-pattern>
-    </servlet-mapping>
-
 </web-app>
