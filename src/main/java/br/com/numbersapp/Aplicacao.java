@@ -1,23 +1,24 @@
 package br.com.numbersapp;
 
 import br.com.numbersapp.dao.PessoaDAO;
+import br.com.numbersapp.model.Curso;
 import br.com.numbersapp.model.Pessoa;
 
 import java.util.List;
 import java.util.Optional;
 
-public class Aplicacao {
+public class  Aplicacao {
     public static void main(String[] args) {
         // Teste de save -- INSERT
-//        PessoaDAO pessoaDAO = new PessoaDAO();
-//        Pessoa pessoa = new Pessoa();
-//        pessoa.setNome("Genoveva");
-//        pessoa.setCpf("333345457501");
-//        pessoa.setEmail("geno@email.com");
-//        pessoa.setDataintegracao(java.time.LocalDate.now());
-//        pessoa.setCurso(Curso.ENGENHARIA_SOFTWARE);
-//        Pessoa inserida =  pessoaDAO.save(pessoa);
-//        inserida.printPessoa();
+        PessoaDAO pessoaDAO = new PessoaDAO();
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Genoveva");
+        pessoa.setCpf("333345457501");
+        pessoa.setEmail("geno@email.com");
+        pessoa.setDataintegracao(java.time.LocalDate.now());
+        pessoa.setCurso(Curso.ENGENHARIA_SOFTWARE);
+        Pessoa inserida =  pessoaDAO.save(pessoa);
+        inserida.printPessoa();
 
         // Teste de update -- UPDATE
 //        PessoaDAO pessoaDAO = new PessoaDAO();
@@ -41,7 +42,7 @@ public class Aplicacao {
 
 
         // Teste de findAll
-        PessoaDAO pessoaDAO = new PessoaDAO();
+//        PessoaDAO pessoaDAO = new PessoaDAO();
         List<Pessoa> pessoas = pessoaDAO.findAll();
 
         for (Pessoa p : pessoas) {

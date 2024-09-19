@@ -13,15 +13,18 @@ public class PessoaDAO implements iPessoaDAO{
     @Override
     public Pessoa save(Pessoa pessoa) {
         try (Connection connection = ConnectionFactory.getConnection()) {
-            String sql = "INSERT INTO pessoas (nome, cpf, email, dataintegracao, curso) " +
-                         "VALUES (?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO pessoas (nome, sobrenome, cpf, email, numerocelular, dataaniversario, dataintegracao, curso) " +
+                         "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             assert connection != null;
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, pessoa.getNome());
-            preparedStatement.setString(2, pessoa.getCpf());
-            preparedStatement.setString(3, pessoa.getEmail());
-            preparedStatement.setDate(4, java.sql.Date.valueOf(pessoa.getDataintegracao()));
-            preparedStatement.setString(5, pessoa.getCurso().toString());
+            preparedStatement.setString(2, pessoa.getSobrenome());
+            preparedStatement.setString(3, pessoa.getCpf());
+            preparedStatement.setString(4, pessoa.getEmail());
+            preparedStatement.setString(5, pessoa.getNumerocelular());
+            preparedStatement.setDate(6, java.sql.Date.valueOf(pessoa.getDataaniversario()));
+            preparedStatement.setDate(7, java.sql.Date.valueOf(pessoa.getDataintegracao()));
+            preparedStatement.setString(8, pessoa.getCurso().toString());
             preparedStatement.executeUpdate();
 
             ResultSet resultSet = preparedStatement.getGeneratedKeys();
