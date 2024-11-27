@@ -41,6 +41,14 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-database-postgresql</artifactId>
+            <version>11.0.0</version>
+            <scope>runtime</scope>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>lab-numbers</finalName>
@@ -51,12 +59,17 @@
                 <version>9.4.46.v20220331</version>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>11.0.0</version>
                 <configuration>
-                    <source>9</source>
-                    <target>9</target>
+                    <sqlMigrationSeparator>__</sqlMigrationSeparator>
+                    <locations>
+                        <location>filesystem:src/main/resources/db/migrations</location>
+                    </locations>
+                    <url>jdbc:postgresql://localhost:5432/numbersapp</url>
+                    <user>rogerio</user>
+                    <password>rogerio123</password>
                 </configuration>
             </plugin>
         </plugins>
